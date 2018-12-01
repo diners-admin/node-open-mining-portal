@@ -1,0 +1,70 @@
+{
+    "enabled": true,
+    "coin": "diners.json",
+
+    "address": "DKR99Vue4VU3c3XPvQjvzPH5hPRjeoxaLP",
+
+    "rewardRecipients": {
+        "DLFjmDPT5tfZJcXXro7vrkiUc7MM11G53g": 1.5,
+        "DLFjmDPT5tfZJcXXro7vrkiUc7MM11G53g": 0.1
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 20,
+        "minimumPayment": 70,
+        "daemon": {
+            "host": "node1.walletbuilders.com",
+            "port": 44062,
+            "user": "rcp_diners",
+            "password": "d440cfb53a7cd20da17a3f3a1"
+        }
+    },
+
+    "ports": {
+        "3008": {
+            "diff": 8
+        },
+        "3032": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3256": {
+            "diff": 256
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "node1.walletbuilders.com",
+            "port": 44062,
+            "user": "rcp_diners",
+            "password": "d440cfb53a7cd20da17a3f3a1"
+        }
+    ],
+
+    "p2p": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 44062,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "0.0.0.1",
+        "port": 44062,
+        "user": "me",
+        "password": "mypass",
+        "database": "dns",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    }
+
+}
