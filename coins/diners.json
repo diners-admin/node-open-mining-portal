@@ -1,0 +1,7 @@
+{
+    "name": "Diners",
+    "symbol": "DNS",
+    "algorithm": "scrypt",
+    "peerMagic": "0xc60x000x210xe2",
+    "peerMagicTestnet": ""
+}
